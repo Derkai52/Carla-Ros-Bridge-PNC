@@ -99,7 +99,7 @@ cd path/to/carla/root
 ./CarlaUE4.sh
 ```
 
-**终端2：启动控制结点**
+**终端2：启动控制节点**
 
 ```
 source devel/setup.bash
@@ -139,7 +139,7 @@ cd path/to/carla/root
 
 
 
-**终端2：启动Planning结点**
+**终端2：启动Planning节点**
 
 ```bash
 source devel/setup.bash
@@ -159,7 +159,7 @@ python scenario_runner.py --scenario Avoid_and_Follow_1 --waitForEgo
 
 
 
-**终端4：启动控制结点**
+**终端4：启动控制节点**
 
 ```bash
 source devel/setup.bash
