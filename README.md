@@ -54,19 +54,19 @@ Local planner: Lattice Planner
 
   
 
-- [Carla simulator (0.9.11)](https://github.com/carla-simulator/carla/releases/tag/0.9.11)  
+- [Carla simulator (0.9.12)](https://github.com/carla-simulator/carla/releases/tag/0.9.12)  
 
   安装配置手册：https://carla.readthedocs.io/en/latest/start_quickstart/
 
   
 
-- [ROS bridge for CARLA simulator(0.9.11)](https://github.com/carla-simulator/ros-bridge/tree/0.9.11)  
+- [ROS bridge for CARLA simulator(0.9.12)](https://github.com/carla-simulator/ros-bridge/tree/0.9.12)  
 
   安装配置手册：https://carla.readthedocs.io/projects/ros-bridge/en/latest/ros_installation_ros1/
 
   
 
-- [Carla scenario_runner(0.9.11)](https://github.com/czjaixuexi/scenario_runner/tree/v0.9.11-czj)
+- [Carla scenario_runner(0.9.12)](https://github.com/czjaixuexi/scenario_runner/tree/v0.9.12-czj)
 
 ​		安装配置手册：https://carla-scenariorunner.readthedocs.io/en/latest/getting_scenariorunner/
 
@@ -165,7 +165,7 @@ roslaunch planning planning_demo.launch
 
 **终端3：启动scenario runner** 
 
-scenario_runner-0.9.11目录下
+scenario_runner-0.9.12目录下
 
 ```bash
 python scenario_runner.py --scenario Avoid_and_Follow_1 --waitForEgo

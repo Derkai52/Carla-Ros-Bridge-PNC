@@ -1,4 +1,4 @@
 - git:
     local-name: carla-ros-bridge
     uri: https://github.com/carla-simulator/ros-bridge.git
-    version: 0.9.11
+    version: 0.9.12
