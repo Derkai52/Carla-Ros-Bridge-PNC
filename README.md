@@ -1,16 +1,13 @@
-## carla_ros_birdge_pnc
+# Carla-Ros-Birdge-PNC
 
-通过carla-ros-bridge在carla上实现自动驾驶planning and control。
+本项目旨在通过 carla-ros-bridge 在 carla 上实现自动驾驶常用规划与控制模块。
 
+## [1、Controller Module](./controller)
+本模块包含简易的控制算法
 
+横向控制：`LQR`, `PurePuresuit`, `Stanley`
 
-## Table of Contents
-
-#### [P1 - Controller](./controller)
-
-横向控制：LQR, PurePuresuit, Stanley
-
-纵向控制：PID
+纵向控制：`PID`
 
 ![LQR1](figure/LQR1.gif)
 
@@ -24,13 +21,13 @@
 
 
 
-#### [P2 - Planning](./planning)
+## [2、Planning Module](./planning)
 
-简易场景下的路径规划
+本模块包含简易场景下的路径规划算法
 
-Global planner: A* (carla_ros_bridge 自带) 
+Global planner: `A*` (carla_ros_bridge 自带) 
 
-Local planner: Lattice Planner
+Local planner: `Lattice Planner`
 
 ![lp2-16872379376268](figure/lp2.gif)
 
@@ -38,25 +35,14 @@ Local planner: Lattice Planner
 
 
 
-## Build
+## 项目构建
 
+本项目在 Ubuntu 20.04、ROS Noetic、carla 0.9.12 下通过测试。  
 #### 1.安装依赖：
-
-- Ubuntu 18.04/20.04 
-
-- ROS Melodic/Noetic
-
-- Eigen
-
-- cmake >= 3.5
-
-- python3.X
-
-  
 
 - [Carla simulator (0.9.12)](https://github.com/carla-simulator/carla/releases/tag/0.9.12)  
 
-  安装配置手册：https://carla.readthedocs.io/en/latest/start_quickstart/
+  安装配置手册：https://carla.readthedocs.io/en/0.9.12/start_quickstart/
 
   
 
@@ -66,9 +52,9 @@ Local planner: Lattice Planner
 
   
 
-- [Carla scenario_runner(0.9.12)](https://github.com/czjaixuexi/scenario_runner/tree/v0.9.12-czj)
+- [Carla scenario_runner(0.9.12)](https://github.com/carla-simulator/scenario_runner) 
 
-​		安装配置手册：https://carla-scenariorunner.readthedocs.io/en/latest/getting_scenariorunner/
+  安装配置手册：https://carla-scenariorunner.readthedocs.io/en/latest/getting_scenariorunner/
 
 
 
@@ -198,4 +184,6 @@ roslaunch controller controller.launch
 [Casper Auto](https://github.com/casper-auto)
 
 [Optimal Trajectory Generation for Dynamic Street Scenarios in a Frenet Frame](https://www.researchgate.net/publication/224156269_Optimal_Trajectory_Generation_for_Dynamic_Street_Scenarios_in_a_Frenet_Frame)
+
+[https://github.com/czjaixuexi/carla_ros_bridge_pnc](https://github.com/czjaixuexi/carla_ros_bridge_pnc)
 
